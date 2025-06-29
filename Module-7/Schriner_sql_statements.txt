@@ -1,0 +1,19 @@
+CREATE TABLE IF NOT EXISTS movies (
+    id INT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    director VARCHAR(255),
+    genre VARCHAR(100),
+    rating VARCHAR(10),
+    length INT
+);
+INSERT INTO movies (id, title, director, genre, rating, length) VALUES
+(1, 'How to Train Your Dragon', 'Dean DeBlois', 'Family', 'PG', 98),
+(2, 'Paddington', 'Paul King', 'Family', 'PG', 95),
+(3, 'Braveheart', 'Mel Gibson', 'Drama', 'R', 178),
+(4, 'The Usual Suspects', 'Bryan Singer', 'Drama', 'R', 106),
+(5, 'Dune: Part Two', 'Denis Villeneuve', 'Sci-Fi', 'PG-13', 166),
+(6, 'Toy Story 3', 'Lee Unkrich', 'Family', 'G', 103),
+(7, 'Street Kings', 'David Ayer', 'Action', 'R', 109),
+(8, 'The Big Short', 'Adam McKay', 'Drama', 'R', 130),
+(9, 'Generation Iron', 'Vlad Yudin', 'Documentary', 'PG-13', 106),
+(10, 'The Princess Bride', 'Rob Reiner', 'Fantasy', 'PG', 98);
